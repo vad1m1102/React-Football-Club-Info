@@ -1,0 +1,145 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+
+
+.ShowClub {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.ShowClub h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: inherit;
+  border-bottom: 3px solid #eee;
+  padding-bottom: 10px;
+}
+
+.MainInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.MainInfo img {
+  width: 250px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.MainInfo img.logo {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.Achievements {
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 6px 18px rgba(54, 54, 54, 0.75);
+  padding: 20px;
+
+}
+ul {
+  list-style-type: none;
+  padding-left: 0; 
+}
+
+.Achievements::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.5));
+  z-index: 0;
+}
+
+.Achievements h3,
+.Achievements ul,
+.Achievements li {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+.Achievements h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.Squad h3 {
+  margin: 20px 0 10px;
+  font-size: 1.8rem;
+  border-left: 5px solid #ccc;
+  padding-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+thead {
+  background: #333;
+  color: white;
+}
+
+td, th {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+tbody tr:hover {
+  background: #f3f3f3;
+}
+
+td img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+button.next {
+  margin: 30px auto 0;
+  display: block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+button.next:hover {
+  background: #0056b3;
+}
